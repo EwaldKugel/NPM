@@ -1,0 +1,34 @@
+\documentclass[fontsize=11, titlepage=true, parskip=half]{scrartcl}
+\input{Preamble/preamble}
+
+
+% \includeonly{
+% Titelblatt2,
+% Abstract,
+% Einleitung,
+% Problembeschreibung,
+% Grundlagen,
+% Analyse_des_Problems,
+% Lösung,
+% Zusammenfassung_und_Diskussion,
+% Fazit_und_Ausblick,
+% }
+
+\begin{document}
+\pagenumbering{roman}
+\include{Titelblatt/Titelblatt2}
+
+\tableofcontents
+
+\cleardoubleoddpage
+\pagenumbering{arabic}
+%\KOMAoption{parskip}{half}
+
+\include{Einleitung/Einleitung}
+
+\include{Zusammenfassung/Zusammenfassung}
+\appendix
+
+\bibliographystyle{Literatur/Rhein_Waal}
+\bibliography{Literatur/Literatur}
+\end{document}
